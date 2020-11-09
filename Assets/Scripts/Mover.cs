@@ -7,8 +7,6 @@ public class Mover : MonoBehaviour
 {
     [SerializeField] Transform target;
 
-    Ray lastRay;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -33,9 +31,6 @@ public class Mover : MonoBehaviour
 
         bool hasHit = Physics.Raycast(ray, out hit);
 
-        if (hasHit)
-        {
-            GetComponent<NavMeshAgent>().destination = hit.point;
-        }
+        if (hasHit) GetComponent<NavMeshAgent>().destination = hit.point;
     }
 }
