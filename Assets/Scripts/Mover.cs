@@ -20,8 +20,6 @@ public class Mover : MonoBehaviour
         {
             MoveToCursor();
         }
-        
-        
     }
 
     private void MoveToCursor()
