@@ -1,17 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NewMonoBehaviour : MonoBehaviour
+namespace RPG.Core
 {
-    // Use this for initialization
-    void Start()
+    public class ActionScheduler : MonoBehaviour
     {
+        public void StartAction(MonoBehaviour)
+        {
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        }
     }
 }
+
+
