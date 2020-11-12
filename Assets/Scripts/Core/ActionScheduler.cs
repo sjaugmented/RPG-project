@@ -13,7 +13,6 @@ namespace RPG.Core
             if (lastAction != null)
             {
                 lastAction.Cancel();
-                print("Cancelling " + lastAction);
             }
 
             lastAction = action;

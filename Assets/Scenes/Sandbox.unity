@@ -3063,5 +3063,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 3964150008599452852}
+    - target: {fileID: 6753661407245518652, guid: c1e62109ff26dc24f9d4bc205d5196ed,
+        type: 3}
+      propertyPath: field of view
+      value: 44.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1e62109ff26dc24f9d4bc205d5196ed, type: 3}
