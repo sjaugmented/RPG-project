@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using RPG.Combat;
 
 namespace RPG.Movement
 {
@@ -28,7 +27,7 @@ namespace RPG.Movement
             navMeshAgent.isStopped = false;
         }
 
-        public void Stop() 
+        public void Stop()
         {
             navMeshAgent.isStopped = true;
         }
