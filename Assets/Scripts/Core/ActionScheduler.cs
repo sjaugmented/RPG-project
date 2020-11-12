@@ -5,9 +5,17 @@ namespace RPG.Core
 {
     public class ActionScheduler : MonoBehaviour
     {
-        public void StartAction(MonoBehaviour)
-        {
+        MonoBehaviour lastAction;
 
+        public void StartAction(MonoBehaviour action)
+        {
+            if (lastAction == action) return;
+            if (lastAction != null)
+            {
+                print("Cancelling " + lastAction);
+            }
+
+            lastAction = action;
         }
     }
 }
