@@ -14,18 +14,6 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0.95, z: 0}
---- !u!114 &3978189252214855176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401902741731101118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5691299b1d37c3429c81f511952ebd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2292280809958445958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39,6 +27,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chaseDistance: 5
+--- !u!114 &3978189252214855176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401902741731101118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5691299b1d37c3429c81f511952ebd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2428347326203740978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54,7 +54,7 @@ PrefabInstance:
     - target: {fileID: 2603328442661833357, guid: 44ce15b09d0dd624a91c797cbdfed501,
         type: 3}
       propertyPath: m_Speed
-      value: 5
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 2603328442661833366, guid: 44ce15b09d0dd624a91c797cbdfed501,
         type: 3}
