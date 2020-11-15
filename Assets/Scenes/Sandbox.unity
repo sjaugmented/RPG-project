@@ -347,7 +347,7 @@ PrefabInstance:
     - target: {fileID: 401902741731101092, guid: e1f964926295f405cacc9bd419a50d97,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 401902741731101092, guid: e1f964926295f405cacc9bd419a50d97,
         type: 3}
@@ -368,6 +368,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179639386589192841, guid: e1f964926295f405cacc9bd419a50d97,
+        type: 3}
+      propertyPath: healthPoints
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1f964926295f405cacc9bd419a50d97, type: 3}
@@ -2082,7 +2087,7 @@ Transform:
   - {fileID: 779191781}
   - {fileID: 1807609367}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1421573232
 PrefabInstance:
@@ -2275,7 +2280,7 @@ PrefabInstance:
     - target: {fileID: 8370834732705394280, guid: 2b8bb192a20d445eda9f4c184638e493,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8370834732705394280, guid: 2b8bb192a20d445eda9f4c184638e493,
         type: 3}
@@ -2344,7 +2349,7 @@ PrefabInstance:
     - target: {fileID: 401902741731101092, guid: e1f964926295f405cacc9bd419a50d97,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 401902741731101092, guid: e1f964926295f405cacc9bd419a50d97,
         type: 3}
@@ -2365,6 +2370,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179639386589192841, guid: e1f964926295f405cacc9bd419a50d97,
+        type: 3}
+      propertyPath: healthPoints
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1f964926295f405cacc9bd419a50d97, type: 3}
@@ -3105,7 +3115,7 @@ PrefabInstance:
     - target: {fileID: 401902741731101092, guid: e1f964926295f405cacc9bd419a50d97,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 401902741731101092, guid: e1f964926295f405cacc9bd419a50d97,
         type: 3}
@@ -3126,6 +3136,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179639386589192841, guid: e1f964926295f405cacc9bd419a50d97,
+        type: 3}
+      propertyPath: healthPoints
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1f964926295f405cacc9bd419a50d97, type: 3}
