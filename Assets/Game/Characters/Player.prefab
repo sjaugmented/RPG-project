@@ -779,10 +779,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2603328442661833356, guid: 44ce15b09d0dd624a91c797cbdfed501,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2603328442661833366, guid: 44ce15b09d0dd624a91c797cbdfed501,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.228001
+      value: 13.201066
       objectReference: {fileID: 0}
     - target: {fileID: 2603328442661833366, guid: 44ce15b09d0dd624a91c797cbdfed501,
         type: 3}
@@ -792,27 +797,27 @@ PrefabInstance:
     - target: {fileID: 2603328442661833366, guid: 44ce15b09d0dd624a91c797cbdfed501,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16.04425
+      value: 15.980697
       objectReference: {fileID: 0}
     - target: {fileID: 2603328442661833366, guid: 44ce15b09d0dd624a91c797cbdfed501,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2603328442661833366, guid: 44ce15b09d0dd624a91c797cbdfed501,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.9207288
       objectReference: {fileID: 0}
     - target: {fileID: 2603328442661833366, guid: 44ce15b09d0dd624a91c797cbdfed501,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2603328442661833366, guid: 44ce15b09d0dd624a91c797cbdfed501,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.39020312
       objectReference: {fileID: 0}
     - target: {fileID: 2603328442661833366, guid: 44ce15b09d0dd624a91c797cbdfed501,
         type: 3}
@@ -827,7 +832,7 @@ PrefabInstance:
     - target: {fileID: 2603328442661833366, guid: 44ce15b09d0dd624a91c797cbdfed501,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -134.06601
       objectReference: {fileID: 0}
     - target: {fileID: 2603328442661833366, guid: 44ce15b09d0dd624a91c797cbdfed501,
         type: 3}
@@ -838,6 +843,11 @@ PrefabInstance:
         type: 3}
       propertyPath: weaponRange
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884937115705232625, guid: 44ce15b09d0dd624a91c797cbdfed501,
+        type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44ce15b09d0dd624a91c797cbdfed501, type: 3}

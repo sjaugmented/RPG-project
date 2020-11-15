@@ -369,11 +369,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 2179639386589192841, guid: e1f964926295f405cacc9bd419a50d97,
-        type: 3}
-      propertyPath: healthPoints
-      value: 20
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1f964926295f405cacc9bd419a50d97, type: 3}
 --- !u!1 &57170284 stripped
@@ -2311,11 +2306,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7341391874604197903, guid: 2b8bb192a20d445eda9f4c184638e493,
-        type: 3}
-      propertyPath: timeBetweenAttacks
-      value: 1.2
-      objectReference: {fileID: 0}
     - target: {fileID: 8370834732705394280, guid: 2b8bb192a20d445eda9f4c184638e493,
         type: 3}
       propertyPath: m_LocalPosition.x
