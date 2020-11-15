@@ -55,6 +55,7 @@ namespace RPG.Combat
 
         // animation event
         void Hit() {
+            if (target == null) return;
             target.GetComponent<Health>().TakeDamage(attackDamage);
         }
 
@@ -66,6 +67,7 @@ namespace RPG.Combat
 
         public void Cancel()
         {
+            GetComponent<Animator>().SetTrigger("stopAttack");
             target = null;
         }
 
