@@ -2237,6 +2237,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8036488567567025477, guid: 2b8bb192a20d445eda9f4c184638e493,
+        type: 3}
+      propertyPath: healthPoints
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8370834732705394280, guid: 2b8bb192a20d445eda9f4c184638e493,
         type: 3}
       propertyPath: m_LocalPosition.x
