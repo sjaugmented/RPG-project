@@ -32,6 +32,7 @@ namespace RPG.Combat {
         private void Die()
         {
             GetComponent<Animator>().SetTrigger("die");
+            // GetComponent<CapsuleCollider>().enabled = false;
             isDead = true;
         }
     }
