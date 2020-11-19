@@ -37,6 +37,13 @@ namespace RPG.Movement
             navMeshAgent.isStopped = false;
         }
 
+        public bool HasArrived() {
+            if (navMeshAgent.hasPath == false) {
+                return true;
+            }
+            else return false;
+        }
+
         public void Cancel()
         {
             navMeshAgent.isStopped = true;
