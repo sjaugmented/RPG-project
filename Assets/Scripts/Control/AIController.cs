@@ -18,6 +18,7 @@ namespace RPG.Control
         GameObject player;
 
         Vector3 guardLocation;
+        Quaternion guardRotation;
         float timeSinceLastSawPlayer = Mathf.Infinity;
 
         private void Start() 
@@ -28,6 +29,7 @@ namespace RPG.Control
             player = GameObject.FindWithTag("Player");
             
             guardLocation = transform.position;
+            guardRotation = transform.rotation;
         }
 
         private void Update()
@@ -63,6 +65,9 @@ namespace RPG.Control
         private void GuardBehaviour()
         {
             mover.StartMoveAction(guardLocation);
+            if (mover.HasArrived()) {
+                transform.LookAt(player.transform.position);
+            }
         }
 
         private bool InAttackRangeOfPlayer()
