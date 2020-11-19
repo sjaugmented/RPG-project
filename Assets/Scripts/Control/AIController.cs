@@ -14,6 +14,7 @@ namespace RPG.Control
         [SerializeField] float suspicionTime = 5f;
         [SerializeField] PatrolPath patrolPath;
         [SerializeField] float waypointTolerance = 1f;
+        [SerializeField] float dwellTime = 2f;
 
         Mover mover;
         Fighter fighter;
