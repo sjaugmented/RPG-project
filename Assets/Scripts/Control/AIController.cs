@@ -23,6 +23,7 @@ namespace RPG.Control
 
         Vector3 guardPosition, guardRotation;
         float timeSinceLastSawPlayer = Mathf.Infinity;
+        float timeAtWaypoint = 0;
         int currentWaypointIndex = 0;
 
         private void Start() 
@@ -79,14 +80,19 @@ namespace RPG.Control
             if (patrolPath != null) {
                 if (AtWaypoint())
                 {
-                    CycleWaypoint();
+                    timeAtWaypoint += Time.deltaTime;
+                    if (timeAtWaypoint > dwellTime) {
+                        CycleWaypoint();
+                        timeAtWaypoint = 0;
+                    }
                 }
                 nextPosition = GetCurrentWaypoint();
             }
             
             mover.StartMoveAction(nextPosition);
             
-            if (mover.DoneTraveling()) {
+            if (mover.DoneTraveling() && !patrolPath) {
+                // assume original orientation
                 transform.eulerAngles = guardRotation;
             }
         }
