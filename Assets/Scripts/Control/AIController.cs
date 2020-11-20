@@ -23,7 +23,7 @@ namespace RPG.Control
 
         Vector3 guardPosition, guardRotation;
         float timeSinceLastSawPlayer = Mathf.Infinity;
-        float timeAtWaypoint = 0;
+        float timeAtWaypoint = Mathf.Infinity;
         int currentWaypointIndex = 0;
 
         private void Start() 
