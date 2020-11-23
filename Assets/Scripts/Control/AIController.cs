@@ -14,7 +14,7 @@ namespace RPG.Control
         [SerializeField] float suspicionTime = 5f;
         [SerializeField] PatrolPath patrolPath;
         [SerializeField] float waypointTolerance = 1f;
-        [SerializeField] float dwellTime = 2f;
+        [SerializeField] float waypointDwellTime = 2f;
 
         Mover mover;
         Fighter fighter;
@@ -49,12 +49,18 @@ namespace RPG.Control
             {
                 SuspicionBehaviour();
             }
-            else 
+            else
             {
                 PatrolBehaviour();
             }
 
+            UpdateTimers();
+        }
+
+        private void UpdateTimers()
+        {
             timeSinceLastSawPlayer += Time.deltaTime;
+            timeAtWaypoint += Time.deltaTime;
         }
 
         private bool InAttackRangeOfPlayer()
@@ -80,8 +86,7 @@ namespace RPG.Control
             if (patrolPath != null) {
                 if (AtWaypoint())
                 {
-                    timeAtWaypoint += Time.deltaTime;
-                    if (timeAtWaypoint > dwellTime) {
+                    if (timeAtWaypoint > waypointDwellTime) {
                         CycleWaypoint();
                         timeAtWaypoint = 0;
                     }
