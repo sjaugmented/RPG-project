@@ -11,7 +11,7 @@ namespace RPG.Movement
     {
         [SerializeField] Transform target;
 
-        NavMeshAgent navMeshAgent;
+        public NavMeshAgent navMeshAgent;
         Health health;
 
         private void Start() {
