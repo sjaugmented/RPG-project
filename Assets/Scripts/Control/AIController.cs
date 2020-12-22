@@ -15,8 +15,8 @@ namespace RPG.Control
         [SerializeField] PatrolPath patrolPath;
         [SerializeField] float waypointTolerance = 1f;
         [SerializeField] float waypointDwellTime = 2f;
-        [SerializeField] float patrolSpeed = 3f;
-        [SerializeField] float attackSpeed = 5f;
+        [Range(0,1)]
+        [SerializeField] float patrolSpeedFraction = 0.2f;
 
         Mover mover;
         Fighter fighter;
@@ -73,7 +73,6 @@ namespace RPG.Control
 
         private void AttackBehaviour()
         {
-            mover.navMeshAgent.speed = attackSpeed;
             fighter.Attack(player);
         }
         
@@ -84,8 +83,6 @@ namespace RPG.Control
 
         private void PatrolBehaviour()
         {
-            mover.navMeshAgent.speed = patrolSpeed;
-            
             Vector3 nextPosition = guardPosition;
 
             if (patrolPath != null) {
@@ -99,7 +96,7 @@ namespace RPG.Control
                 nextPosition = GetCurrentWaypoint();
             }
             
-            mover.StartMoveAction(nextPosition);
+            mover.StartMoveAction(nextPosition, patrolSpeedFraction);
             
             if (mover.DoneTraveling() && !patrolPath) {
                 // assume original orientation

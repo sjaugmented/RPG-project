@@ -11,6 +11,7 @@ namespace RPG.Combat
         [SerializeField] float weaponRange = 2f;
         [SerializeField] float timeBetweenAttacks = 1f;
         [SerializeField] int attackDamage = 5;
+        [SerializeField] float attackSpeedFraction = 0.8f;
         
         Health target;
         Mover mover;
@@ -30,7 +31,7 @@ namespace RPG.Combat
 
             if (!GetIsInRange())
             {
-                mover.MoveTo(target.transform.position);
+                mover.MoveTo(target.transform.position, attackSpeedFraction);
             }
             else
             {
